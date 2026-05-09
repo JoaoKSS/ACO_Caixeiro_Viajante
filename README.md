@@ -6,9 +6,10 @@ Este repositório apresenta a implementação do algoritmo Ant Colony Optimizati
 
 O projeto tem como objetivo avaliar o comportamento do ACO utilizando diferentes tamanhos de instância e analisar a influência dos parâmetros do algoritmo na qualidade das soluções encontradas.
 
-## ITEM A - Versão Básica
+## ITEM A) Versão Básica
 
 A versão básica utiliza:
+- 5 cidades
 - 30 iterações;
 - alfa = 1;
 - beta = 1;
