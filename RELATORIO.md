@@ -149,10 +149,10 @@ Na etapa de evaporação, todas as taxas também chegaram à melhor distância f
 
 | Evaporação | Média final | Mediana | Moda | Desvio padrão | Mínimo | Máximo |
 |---|---:|---: |---:|---:|---:|---:|
-| 0.01 | 29.00 | 29.00 | 29.00 | 0.00 | 29.00 | 29.00 |
-| 0.05 | 29.00 | 29.00 | 29.00 | 0.00 | 29.00 | 29.00 |
-| 0.10 | 29.00 | 29.00 | 29.00 | 0.00 | 29.00 | 29.00 |
-| 0.20 | 29.00 | 29.00 | 29.00 | 0.00 | 29.00 | 29.00 |
+0.01 |    29.00 |    29.00 |    29.00 |     0.00 |    29.00 |    29.00
+0.05 |    29.00 |    29.00 |    29.00 |     0.00 |    29.00 |    29.00
+0.1 |    29.50 |    29.00 |    29.00 |     1.58 |    29.00 |    34.00
+0.2 |    29.00 |    29.00 |    29.00 |     0.00 |    29.00 |    29.00
 
 Esse resultado sugere que `0.05` ofereceu melhor equilíbrio entre memória e exploração. Com evaporação muito baixa, o algoritmo mantém por mais tempo informações possivelmente ruins do começo da busca. Com evaporação mais alta, o algoritmo esquece rapidamente os rastros, o que pode dificultar a consolidação das boas rotas. Na instância testada, `0.05` foi a configuração mais estável.
 
@@ -163,9 +163,9 @@ No teste final, os parâmetros escolhidos foram aplicados a instâncias maiores.
 
 | Problema | Torneio | Média | Mediana | Moda | Desvio padrão | Mínimo | Máximo | Tempo médio (s) | Iterações médias |
 |---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-  10 cidades |        4 |   281.00 |   281.00 |   281.00 |     0.00 |   281.00 |   281.00 |          0.0603 |       51.90
-  20 cidades |        6 |   414.70 |   408.50 |   397.00 |    15.55 |   397.00 |   437.00 |          1.0673 |       95.60
-  50 cidades |        8 |   966.00 |   968.50 |   933.00 |    19.98 |   933.00 |   991.00 |          2.4031 |       73.00
+10 cidades |        4 |   281.00 |   281.00 |   281.00 |     0.00 |   281.00 |   281.00 |          0.0455 |       52.30
+20 cidades |        6 |   425.40 |   417.50 |   412.00 |    15.41 |   411.00 |   447.00 |          0.7502 |       86.90
+50 cidades |        8 |   959.50 |   961.00 |   961.00 |    11.89 |   942.00 |   979.00 |          3.5346 |      100.90
 
 ![Boxplot das melhores soluções do teste final](imagens/image8.png)
 ![Evolução da médias das distâncias no teste final](imagens/image9.png)
