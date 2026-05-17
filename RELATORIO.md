@@ -142,6 +142,8 @@ Na comparação entre `alfa` e `beta`, os dois pares avaliados encontraram a mel
 Como houve empate na qualidade final, foi escolhido o par `alfa = 0.6` e `beta = 0.2`. Essa escolha dá peso relativamente maior ao feromônio, valorizando o aprendizado coletivo da colônia nas etapas seguintes.
 
 ![Imagem comparativa: análise de seleção do par (alfa, beta)](imagens/image5.png)
+![Imagem comparativa: Evolução média das instâncias (alfa, beta)](imagens/image5_1.png)
+
 
 Na etapa de evaporação, todas as taxas também chegaram à melhor distância final `29`, mas a média das distâncias ao longo das iterações diferenciou o comportamento das configurações. A taxa `0.05` apresentou a menor média global durante o processo de busca, sendo selecionada para o teste final.
 
@@ -166,6 +168,7 @@ No teste final, os parâmetros escolhidos foram aplicados a instâncias maiores.
   50 cidades |        8 |   966.00 |   968.50 |   933.00 |    19.98 |   933.00 |   991.00 |          2.4031 |       73.00
 
 ![Boxplot das melhores soluções do teste final](imagens/image8.png)
+![Evolução da médias das distâncias no teste final](imagens/image9.png)
 
 ---
 
