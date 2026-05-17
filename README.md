@@ -80,6 +80,10 @@ As imagens abaixo foram geradas pelo notebook e estão na pasta `imagens/`.
 
 ![Boxplot final](imagens/image8.png)
 
+- Figura 9 — Evolução da média das dintãncias (teste final)
+
+![Boxplot final](imagens/image9.png)
+
 ## Complexidade
 
 O TSP é NP‑difícil: o número de rotas cresce fatorialmente com `n` (em torno de $O(n!)$; ciclos distintos ≈ $\frac{(n-1)!}{2}$ no caso simétrico). A complexidade prática do ACO implementado depende de `I` (iterações), `m` (formigas, aqui igual a `n`) e `n` (cidades). O custo por iteração é aproximadamente $O(m\cdot n^2)$, levando a custo total aproximado $O(I\cdot m\cdot n^2)$.
