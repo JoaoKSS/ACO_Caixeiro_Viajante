@@ -80,7 +80,7 @@ As imagens abaixo foram geradas pelo notebook e estão na pasta `imagens/`.
 
 ![Boxplot final](imagens/image8.png)
 
-- Figura 9 — Evolução da média das dintãncias (teste final)
+- Figura 9 — Evolução da média das dintâncias (teste final)
 
 ![Boxplot final](imagens/image9.png)
 
