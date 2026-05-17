@@ -16,6 +16,17 @@ A instância inicial do trabalho possui 5 cidades (`A`, `B`, `C`, `D` e `E`) e f
 
 A implementação foi desenvolvida em Python no notebook [`aco_tsp.ipynb`](aco_tsp.ipynb). Foram utilizados recursos da linguagem para manipulação de listas, conjuntos e matrizes, além de rotinas auxiliares para cálculo estatístico, execução repetida dos experimentos e visualização dos resultados.
 
+### Complexidade computacional
+
+O Problema do Caixeiro Viajante (TSP) é um problema combinatório NP‑difícil: o espaço de soluções cresce de forma fatorial com o número de cidades, frequentemente descrito por $O(n!)$ (mais precisamente, para o TSP simétrico o número de ciclos distintos é aproximadamente $\frac{(n-1)!}{2}$). Isso implica que métodos exatos tornam‑se impraticáveis conforme $n$ cresce.
+
+No contexto do notebook `aco_tsp.ipynb`, a metaheurística ACO apresenta custo computacional que depende do número de formigas $m$, do número de cidades $n$ e do número de iterações $I$. Para uma implementação típica, o custo por iteração é da ordem de $O(m\cdot n^2)$ (cada formiga escolhe sequencialmente cidades restantes e atualizações de feromônio percorrem as arestas da rota), resultando em custo total aproximado $O(I\cdot m\cdot n^2)$.
+
+Em termos práticos, o "pior caso" do problema refere‑se à necessidade de explorar grande parte do espaço de busca para localizar soluções de alta qualidade, situação em que algoritmos exatos exigem tempo exponencial/fatorial; para ACO, o pior caso traduz‑se em muitas iterações e/ou muitas formigas até convergir, elevando o tempo total proporcionalmente a $I\cdot m\cdot n^2$.
+
+O "melhor caso" ocorre quando a instância possui estrutura favorável (por exemplo, rotas claramente dominantes ou distâncias que tornam escolhas locais óbvias), permitindo que heurísticas como ACO encontrem boas soluções rapidamente; nesse cenário prático, a convergência pode acontecer em poucas iterações e o custo real fica bem abaixo do limite teórico, principalmente para pequenas $n$ como na instância inicial usada aqui.
+
+
 A instância base utiliza a seguinte matriz de distâncias:
 
 | Cidade | A | B | C | D | E |
